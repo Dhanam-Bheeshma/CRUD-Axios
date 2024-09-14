@@ -1,38 +1,99 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height: 100vh;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 150px;
+}
+
+.add-button {
+  background-color: green;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.edit-button {
+  background-color: blue;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete-button {
+  background-color: red;
+  color: white;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  gap: 20px; /* Space between columns */
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+li {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+li strong {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+li button {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: auto;
+  max-width: none;
+}
+
+button-group {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
 }
